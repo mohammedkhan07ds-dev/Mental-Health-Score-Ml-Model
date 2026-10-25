@@ -710,7 +710,7 @@ input[type="number"]:invalid:not(:placeholder-shown):not(:focus) { border-color:
 .choice input:disabled + .choice-body { opacity: 0.45; cursor: not-allowed; }
 
 /* ---------------------------------------------------------
-   Sliders (synced with the number inputs by Script.js)
+   Sliders (synced with the number inputs by script.js)
    The filled track and thumb glow; --fill is set from JS.
    --------------------------------------------------------- */
 .slider-line { display: grid; grid-template-columns: 1fr 140px; gap: 18px; align-items: center; }
