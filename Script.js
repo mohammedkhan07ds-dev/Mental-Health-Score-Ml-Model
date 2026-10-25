@@ -3,7 +3,7 @@
 
   // Backend address. Start the API with:
   //   uvicorn main:app --reload --port 8000
-  const API_BASE = "http://127.0.0.1:8000";
+  const API_BASE = "https://mental-health-score-ml-model-kmk8.onrender.com/";
 
   // Same list main.py uses to group countries. Anything else becomes "Other" on the server.
   const TOP_COUNTRIES = ["India", "USA", "Canada", "Australia", "UK", "Germany", "Mexico", "Turkey", "France"];
