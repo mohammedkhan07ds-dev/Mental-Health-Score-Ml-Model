@@ -1,59 +1,69 @@
-﻿# ❤️ HeartCare AI — Heart Disease Risk Prediction
+﻿# 🧠 Mental Health Score Prediction — Machine Learning
 
-**HeartCare AI** is a machine learning web application that predicts the likelihood of heart disease based on user-provided health parameters. It provides a simple, interactive interface built with Streamlit.
+A machine learning web application designed to predict mental health scores based on user-provided parameters. The project combines a web-based frontend with a Python backend that serves a trained machine learning model.
 
-🌐 **Live Demo:** [Try HeartCare AI](https://heartcare-ai-app-5h7a8ayksmkbfugkqxa4ca.streamlit.app/)
+> **Development Status:** The frontend is still under development. The interface and user experience may continue to change as new improvements are implemented.
+
+## 🚀 Live Application
+
+- **Frontend:** Hosted on Vercel
+- **Backend API:** Hosted on Render
+
+*Add your actual Vercel frontend URL and Render backend URL above when available.*
 
 ## ✨ Features
 
-- 🫀 Predict heart disease risk using a trained K-Nearest Neighbors (KNN) model.
-- 📊 Collect health-related inputs through an interactive web interface.
-- ⚙️ Apply the saved preprocessing scaler before making predictions.
-- 🚀 Access the application directly through a web browser.
-- 🎨 User-friendly interface designed for a smooth experience.
+- Machine learning-based mental health score prediction
+- Interactive web interface for entering prediction parameters
+- Python backend for processing requests and generating predictions
+- Integration between the frontend and backend through API requests
+- Responsive UI design with ongoing frontend improvements
 
 ## 🛠️ Tech Stack
 
-- **Language:** Python
-- **Machine Learning:** Scikit-learn
-- **Data Processing:** Pandas, NumPy
-- **Web Application:** Streamlit
-- **Model & Artifact Storage:** Joblib / Pickle-based files
-
-## 🚧 Development Status
-
-**HeartCare AI is currently under active development.**
-
-- ✅ Machine learning model integrated.
-- ✅ Backend prediction functionality implemented.
-- ✅ Application deployed on Streamlit Community Cloud.
-- 🛠️ Frontend UI/UX improvements are still in progress.
-- 🔜 Further enhancements to the design, responsiveness, and user experience are planned.
-
-The live application is accessible, but the frontend may change as development continues.
-
-
+| Component | Technology |
+|---|---|
+| Frontend | HTML, CSS, JavaScript |
+| Backend | Python, FastAPI |
+| Machine Learning | Scikit-learn |
+| Model Storage | Pickle (`.pkl`) |
+| Frontend Hosting | Vercel |
+| Backend Hosting | Render |
+| Version Control | Git and GitHub |
 
 ## 📂 Project Structure
 
 ```text
-heartcare-ai-app/
-├── app.py
-├── Heart.ipynb
-├── heart_columns.pkl
-├── heart_scaler.pkl
-├── knn_heart_model.pkl
+Mental-Health-Score-ML-Model/
+├── Frontend/
+│   ├── Index.html
+│   ├── Script.js
+│   └── Style.css
+├── main.py
+├── Mental_Health_Model.pkl
+├── ML_PROJECT.ipynb
 ├── requirements.txt
 └── README.md
 ```
 
-## ⚙️ Run Locally
+*Note: Update the filenames in this structure if your actual GitHub files use different capitalization or names.*
+
+## ⚙️ How It Works
+
+1. The user opens the frontend website hosted on Vercel.
+2. The user enters the required parameters.
+3. The frontend sends the input data to the backend API hosted on Render.
+4. The backend validates and processes the inputs.
+5. The trained machine learning model generates a prediction.
+6. The backend returns the result to the frontend for display.
+
+## 💻 Run Locally
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/mohammedkhan07ds-dev/heartcare-ai-app.git
-cd heartcare-ai-app
+git clone https://github.com/mohammedkhan07ds-dev/Mental-Health-Score-ML-Model.git
+cd Mental-Health-Score-ML-Model
 ```
 
 ### 2. Create a virtual environment
@@ -74,38 +84,66 @@ Activate it on Windows:
 python -m pip install -r requirements.txt
 ```
 
-### 4. Start the application
+### 4. Start the backend
 
 ```bash
-streamlit run app.py
+uvicorn main:app --reload
 ```
 
-The application should open in your browser. If it doesn't, visit `http://localhost:8501`.
+If your FastAPI application uses a different ASGI application variable, adjust the command accordingly.
 
-## 🧠 How It Works
+The backend will typically be available at:
 
-1. The user enters the required health parameters.
-2. The application prepares the input in the expected feature format.
-3. The saved scaler transforms the input.
-4. The trained KNN model generates a prediction.
-5. The application displays the prediction result.
+`http://127.0.0.1:8000`
 
-## 🚀 Deployment
+If enabled, explore the API documentation at:
 
-The application is deployed using **Streamlit Community Cloud** and connected to this GitHub repository.
+`http://127.0.0.1:8000/docs`
 
-**Live application:** https://heartcare-ai-app-5h7a8ayksmkbfugkqxa4ca.streamlit.app/
+### 5. Open the frontend
+
+Open the frontend HTML file in your browser or use a local development server. Ensure the JavaScript API URL points to your locally running backend.
+
+## 🌐 Deployment
+
+### Frontend — Vercel
+
+The frontend is deployed on Vercel. HTML, CSS, and JavaScript files provide the user interface and communicate with the backend API.
+
+### Backend — Render
+
+The backend is deployed on Render. It hosts the FastAPI application, loads the trained machine learning model, and processes prediction requests.
+
+**Important:** Configure the backend's CORS settings to allow requests from the deployed Vercel domain. Keep private credentials and server-side configuration out of frontend code.
+
+## 🔮 Future Improvements
+
+- Continue refining the frontend design and responsiveness
+- Improve form validation and error handling
+- Enhance loading indicators and prediction result presentation
+- Improve API reliability and deployment performance
+- Add model evaluation details and project documentation
+
+## ⚠️ Disclaimer
+
+This project is intended for educational and machine learning demonstration purposes. Its predictions are not a clinical diagnosis and should not replace professional mental health assessment or advice.
 
 ## 👨‍💻 Developer
 
 **Mohammed Khan**
 
-- GitHub: [@mohammedkhan07ds-dev](https://github.com/mohammedkhan07ds-dev)
+- Email: [mohammedkhan07ds@gmail.com](mailto:mohammedkhan07ds@gmail.com)
 - LinkedIn: [Mohammed Khan](https://www.linkedin.com/in/mohammed-khan-670114422/)
 
-## ⚠️ Disclaimer
+Interested in AI, machine learning, and building practical software projects.
 
-HeartCare AI is an educational machine learning project. Its predictions are not a medical diagnosis and should not be used as a substitute for professional medical advice. Consult a qualified healthcare professional for medical concerns.
+> "Great ideas start with curiosity, become reality through code, and grow when we build together."
+
+**Let's connect, collaborate, and build cool things together!**
+
+---
+
+*Built with curiosity and a passion for AI.* and should not be used as a substitute for professional medical advice. Consult a qualified healthcare professional for medical concerns.
 
 ---
 
