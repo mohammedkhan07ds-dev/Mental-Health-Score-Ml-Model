@@ -145,6 +145,15 @@ Interested in AI, machine learning, and building practical software projects.
 
 *Built with curiosity and a passion for AI.* and should not be used as a substitute for professional medical advice. Consult a qualified healthcare professional for medical concerns.
 
+## 🚀 Live Application
+
+- **Live Demo (Frontend):** [Mental Health Score ML Model](https://mentalhealthscoremlmodelfrontend.vercel.app/)
+- **Frontend Hosting:** Vercel
+- **Backend Hosting:** Render
+
+👉 **[Click here to try the live demo](https://mentalhealthscoremlmodelfrontend.vercel.app/)**
+
+> **Development Status:** The frontend is still under development. The user interface and experience may continue to improve as development progresses.
 ---
 
 ⭐ If you find this project interesting, consider giving the repository a star!
